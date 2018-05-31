@@ -10,7 +10,16 @@
   			font-family: Verdana;
 		}
 		.blue {
-			text-align: center;
+			display: block;
+			background-color: #3498DB;
+   			color: white;
+    		padding: 16px;
+    		font-size: 16px;
+    		border: none;
+   			cursor: pointer;
+    		text-align: center;
+    		margin: auto;
+    		
 		}
 		img {
 			display: block;
@@ -19,8 +28,12 @@
 			width: 150px;
 			height: 250px;
 		}
-		button{
-			cursor: pointer;
+		.goback {
+			max-width: 25px;
+			max-height: 25px;
+			cursor: pointer
+			
+    	
 		}
 </style>
 </head>
@@ -29,10 +42,12 @@
 	<h1>everything?</h1>
 	<br>
 		<img src="https://cheapassembly.com/wp-content/themes/mytheme/img/allen_key.png">
-	<div class="blue">
-		<button onclick="location.href='missing.html'" type="button">OK</button>
-		<button onclick="location.href='RICHARD.html'" type="button">GO BACK</button>
+	<div>
+		<button class="blue" onclick="location.href='missing.html'" type="button">OK</button>
+		<br>
 	</div>
-
+		<div class="goback">
+		<button onclick="location.href='RICHARD'" type="button"><img class="goback" src="https://cdn1.iconfinder.com/data/icons/ui-color/512/Untitled-21-512.png"></button>
+		</div>
 </body>
 </html>
