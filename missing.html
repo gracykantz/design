@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uh oh!</title>
+	<script type="text/javascript">
+		/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	</script>
+	<style type="text/css">
+	h1 {
+			color: #2b4259;
+  			font-size: 20px;
+  			text-align: center;
+  			font-family: Verdana;
+	}
+	.goback {
+		max-width: 50px;
+		max-height: 100px;
+		cursor: pointer
+		width: 100%;
+    	height: auto;
+    	
+	}
+	.hemnes {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 500px;
+		height: 450px;
+	}
+		/* Dropdown Button */
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+	</style>
+</head>
+<body>
+	<h1>Oops!</h1>
+	<h1>It looks like some </h1>
+	<h1>items may be missing!</h1>
+	<img class ="hemnes" src="http://img.roomeon.com/img/object/ikea-hemnes-beds_8361b66326_xxl.png">
+		<h1>Hemnes Daybed Dark Grey</h1>
+		<h1>Article number: 691-861.14</h1>
+		<h1>QTY: 1</h1>
+		
+		
+		
+			<div class="dropdown">
+  			<button onclick="location.href='claim.html'" class="dropbtn">START CLAIM</button>
+ 			 <div id="myDropdown" class="dropdown-content">
+   			 <a href="#">REFUND</a>
+   			 <a href="#">NEW DELIVERY</a>
+
+  				</div>
+				</div>
+				<br>
+					<div class="goback">
+					<button onclick="location.href='missing.html'" type="button"><img class="goback" src="https://cdn1.iconfinder.com/data/icons/ui-color/512/Untitled-21-512.png"></button>
+					</div>
+
+</body>
+</html>
